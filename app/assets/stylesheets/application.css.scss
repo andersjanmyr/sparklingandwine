@@ -6,7 +6,7 @@ $main-color: #f7e7ce;
 }
 
 @mixin header-background() {
-    background-image: url(../images/grapes-background.png);
+    background-image: image-url('grapes-background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -38,7 +38,7 @@ a:visited { color: #a0a; }
 
 
 .site {
-  background-image: url(../images/champagne-glass.jpg);
+  background-image: image-url('champagne-glass.jpg');
   background-repeat: no-repeat;
   background-position: 100%;
   font-size: 115%;
