@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sparklingandwine</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title><%= yield :title %></title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" href="{{ site.baseurl }}/images/glass_48.png">
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+-  <%= csrf_meta_tags %>
+        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<%= yield %>
+<div class="site">
+  <div class="header">
+    <h1 class="title"><a href="/">Sparkling and Wine</a></h1>
+  </div>
+
+  <div class='main'>
+    <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="contact">
+      <p>
+      info@sparklingandwine.com
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+      </p>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
